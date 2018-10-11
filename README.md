@@ -114,3 +114,4 @@ echo \onmotion\apexcharts\ApexchartsWidget::widget([
     'series' => $series
 ]);
 ```
+![fluent](https://raw.githubusercontent.com/onmotion/yii2-widget-apexcharts/docs/docs/example.png)
