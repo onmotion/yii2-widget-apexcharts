@@ -57,7 +57,7 @@ class ApexchartsWidget extends Widget
         $series = json_encode($this->series);
         $type = json_encode($this->type);
         $width = json_encode($this->width);
-        $height = json_encode($this->height);
+        $height = json_encode((string)$this->height);
         $timeout = $this->timeout;
 
         echo $this->render('index', compact('id', 'timeout', 'chartOptions', 'series', 'type', 'width', 'height'));
