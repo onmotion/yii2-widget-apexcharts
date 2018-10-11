@@ -1,8 +1,8 @@
 {
   "name": "onmotion/yii2-widget-apexcharts",
-  "description": "",
+  "description": "Yii2 charts widget - wrapper for the ApexCharts.js",
   "type": "yii2-extension",
-  "keywords": ["yii2","extension","widget","chart","charts","apexcharts","diagram" ],
+  "keywords": ["yii2","extension","widget","chart","charts","apexcharts","diagram"],
   "license": "MIT",
   "authors": [
     {
