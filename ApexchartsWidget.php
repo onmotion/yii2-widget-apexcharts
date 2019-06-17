@@ -12,6 +12,7 @@ use yii\base\Widget;
 use yii\db\ActiveRecord;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
+use yii\helpers\Json;
 
 /**
  *
@@ -53,7 +54,7 @@ class ApexchartsWidget extends Widget
         ApexchartsWidgetAsset::register($this->getView());
 
         $id = json_encode($this->getId());
-        $chartOptions = json_encode((object)$this->chartOptions);
+        $chartOptions = Json::encode($this->chartOptions);
         $series = json_encode($this->series);
         $type = json_encode($this->type);
         $width = json_encode($this->width);
