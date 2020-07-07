@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "apexcharts": "^3.8.2",
-    "npm": "^6.10.1",
+    "npm": "^6.14.6",
     "vue": "^2.5.11",
     "vue-apexcharts": "^1.4.0"
   },
