@@ -21,9 +21,7 @@ module.exports = {
             new UglifyJsPlugin({
                 sourceMap: false,
                 uglifyOptions: {
-                    compress: {
-                        warnings: false
-                    }
+                    warnings: false
                 },
                 parallel: true
             })

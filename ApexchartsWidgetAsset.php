@@ -24,6 +24,5 @@ class ApexchartsWidgetAsset extends \yii\web\AssetBundle
     ];
 
     public $depends = [
-        'onmotion\vue\VueAsset',
     ];
 }
