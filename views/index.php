@@ -13,6 +13,7 @@
 /** @var $width string */
 /** @var $height string */
 /** @var $timeout integer */
+/** @var $js \yii\web\JsExpression */
 
 ?>
 
@@ -26,17 +27,18 @@ $this->registerJs(<<<JS
 
 setTimeout(function(e) {
   new Vue({
-  el: '#' + $id,
-  data: function() {
+    el: '#' + $id,
+    data: function() {
       return {
-          chartOptions: $chartOptions,
-          series: $series,
-          type: $type,
-          width: $width,
-          height: $height
+        chartOptions: $chartOptions,
+        series: $series,
+        type: $type,
+        width: $width,
+        height: $height
       }
-  }
-});
+    }
+  });
+  $js
 }, $timeout);
 
 
