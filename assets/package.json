@@ -10,7 +10,7 @@
     "build": "webpack --mode production --progress --watch"
   },
   "dependencies": {
-    "apexcharts": "^3.22.0",
+    "apexcharts": "^3.24.0",
     "npm": "^6.14.8",
     "vue": "^2.6.12",
     "vue-apexcharts": "^1.6.0"
