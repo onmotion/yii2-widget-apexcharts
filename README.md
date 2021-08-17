@@ -17,11 +17,11 @@ Installation
 
 Just run:
 
-    composer require onmotion/yii2-widget-apexcharts
+    composer require mandachuvamg/yii2-widget-apexcharts
 
 or add 
 
-    "onmotion/yii2-widget-apexcharts": "*"
+    "mandachuvamg/yii2-widget-apexcharts": "*"
 
 to the require section of your composer.json file.
 
