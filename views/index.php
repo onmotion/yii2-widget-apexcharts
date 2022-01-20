@@ -5,41 +5,22 @@
  * @package yii2-widget-apexcharts
  */
 
-/** @var $this \yii\web\View */
+/** @var $this View */
 /** @var $id string */
+
 /** @var $chartOptions string */
-/** @var $series string */
-/** @var $type string */
-/** @var $width string */
-/** @var $height string */
-/** @var $timeout integer */
+
+use yii\helpers\Html;
+use yii\web\View;
 
 ?>
 
-<div id="<?= json_decode($id) ?>" class="apexcharts-container">
-    <widget-apexcharts :width="width" :height="height" :type="type" :chart-options="chartOptions" :series="series"></widget-apexcharts>
-</div>
+<?= Html::tag('div', '', ['id' => $id]) ?>
 
-<?php
-
-$this->registerJs(<<<JS
-
-setTimeout(function(e) {
-  new Vue({
-  el: '#' + $id,
-  data: function() {
-      return {
-          chartOptions: $chartOptions,
-          series: $series,
-          type: $type,
-          width: $width,
-          height: $height
-      }
-  }
+<?php $this->registerJs(<<<JS
+$(function () {
+    var chart = new ApexCharts(document.querySelector('#$id'), $chartOptions)
+    chart.render();
 });
-}, $timeout);
-
-
 JS
 );
-

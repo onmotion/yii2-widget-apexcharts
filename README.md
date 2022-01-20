@@ -35,13 +35,7 @@ Options
 --
 | Option | type | default | description |
 | ---- | ---- | ---- | ---- |
-| **timeout** | int | `500` | Timeout before widget appearance | 
-| **type** | string | `area` | Chart type. [More](https://apexcharts.com/docs/options/chart/type/) |
-| **width** | string | `100%` | Chart width | 
-| **height** | string | `350` | Chart height | 
 | **chartOptions** | array |  | [detail](https://apexcharts.com/docs/options/) | 
-| **series** | array |  | [detail](https://apexcharts.com/docs/series/) | 
-
 
 
 Examples
@@ -79,16 +73,17 @@ $series = [
 ];
 
 echo \onmotion\apexcharts\ApexchartsWidget::widget([
-    'type' => 'bar', // default area
-    'height' => '400', // default 350
-    'width' => '500', // default 100%
     'chartOptions' => [
         'chart' => [
+            'type' => 'bar', // default area
             'toolbar' => [
                 'show' => true,
                 'autoSelected' => 'zoom'
             ],
+            'height' => '300px',
+            'width' => '100%',
         ],
+        'series' => $series,
         'xaxis' => [
             'type' => 'datetime',
             // 'categories' => $categories,
@@ -111,7 +106,6 @@ echo \onmotion\apexcharts\ApexchartsWidget::widget([
             'horizontalAlign' => 'left',
         ],
     ],
-    'series' => $series
 ]);
 ```
 ![fluent](https://raw.githubusercontent.com/onmotion/yii2-widget-apexcharts/docs/docs/example.png)
