@@ -27,7 +27,7 @@
     "babel-preset-stage-3": "^6.24.1",
     "cross-env": "^5.2.1",
     "css-loader": "^2.1.1",
-    "error-overlay-webpack-plugin": "^0.1.7",
+    "error-overlay-webpack-plugin": "^1.1.0",
     "file-loader": "^1.1.4",
     "lodash": "^4.17.20",
     "node-sass": "^4.14.1",
