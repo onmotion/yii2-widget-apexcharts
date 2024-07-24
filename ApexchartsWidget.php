@@ -28,6 +28,7 @@ class ApexchartsWidget extends Widget
     public $type = 'line';
     public $width = '100%';
     public $height = 350;
+    public $js = null;
 
     public function init()
     {
@@ -60,8 +61,9 @@ class ApexchartsWidget extends Widget
         $width = json_encode($this->width);
         $height = json_encode((string)$this->height);
         $timeout = $this->timeout;
+        $js = $this->js;
 
-        echo $this->render('index', compact('id', 'timeout', 'chartOptions', 'series', 'type', 'width', 'height'));
+        echo $this->render('index', compact('id', 'timeout', 'chartOptions', 'series', 'type', 'width', 'height', 'js'));
     }
 
 
